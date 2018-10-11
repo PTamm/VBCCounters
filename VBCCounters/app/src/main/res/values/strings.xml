@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VBCCounters</string>
+    <string name="addNewMemberButton">Add New</string>
+    <string name="headCountButton">Head Count</string>
 </resources>

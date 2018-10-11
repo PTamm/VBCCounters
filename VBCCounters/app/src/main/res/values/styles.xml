@@ -1,7 +1,14 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Encountered problems with rendering the design layout, preventing me from
+             adding text fields, buttons, etc. Added Base. ... as above. Recommendation
+             from a stackoverflow question on a similar issue.
+             Stackoverflow: https://stackoverflow.com/questions/44223687/render-error-in-android-studio-3-0-layout-editor#45002903
+             User: https://stackoverflow.com/users/8281081/alex-z
+             Date: 2018-09-14-->
+
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
