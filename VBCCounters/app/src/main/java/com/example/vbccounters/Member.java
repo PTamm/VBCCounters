@@ -23,6 +23,10 @@ public class Member {
         return this.memberName;
     }
 
+    public String toString(){
+        return getName();
+    }
+
     public void setCount(int newCount){
         this.count = newCount;
     }

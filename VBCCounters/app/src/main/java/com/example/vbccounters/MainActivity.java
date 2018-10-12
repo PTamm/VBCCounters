@@ -3,8 +3,10 @@ package com.example.vbccounters;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -33,6 +35,29 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+        loadFromFile();
+
+        memberListView = (ListView) findViewById(R.id.membersListView);
+        memberListAdapter = new ArrayAdapter<Member>(this, android.R.layout.simple_list_item_1, memberList);
+        memberListView.setAdapter(memberListAdapter);
+
+    }
+
+    public void addMember(View view){
+        Toast.makeText(this,"Add New Member",Toast.LENGTH_SHORT).show();
+        String mem = "Test";
+        Member newMem = new Member(mem);
+        memberList.add(newMem);
+        memberListAdapter.notifyDataSetChanged();
+    }
+
+    public void headCount(View view){
+        Toast.makeText(this,"Head Count",Toast.LENGTH_SHORT).show();
     }
 
 
