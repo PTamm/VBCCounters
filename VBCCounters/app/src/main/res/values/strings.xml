@@ -9,4 +9,5 @@
     <string name="buttonDeleteEntry">Delete Entry</string>
     <string name="buttonResetCount">Reset Count</string>
     <string name="buttonModifyList">Modify List</string>
+    <string name="totalCountTextView">Total Count</string>
 </resources>
