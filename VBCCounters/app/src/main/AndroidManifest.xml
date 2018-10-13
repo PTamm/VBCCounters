@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AdditionalOptions"></activity>
+        <activity android:name=".AdditionalOptions" />
+        <activity android:name=".ModifyList" />
+        <activity android:name=".HeadCount"></activity>
     </application>
 
 </manifest>

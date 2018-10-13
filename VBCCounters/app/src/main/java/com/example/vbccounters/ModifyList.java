@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -25,20 +24,19 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class ModifyList extends AppCompatActivity {
 
     private static final String FILENAME = "attendFile.sav";
 
-    ListView memberListView;
+    ListView modifyListView;
     ArrayList<Member> memberList;
     ArrayList<String> stringMemList;
     ArrayAdapter<String> memberListAdapter;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_modify_list);
     }
 
     @Override
@@ -54,55 +52,37 @@ public class MainActivity extends AppCompatActivity {
                     +mem.getCount());
         }
 
-        memberListView = (ListView) findViewById(R.id.membersListView);
+        modifyListView = (ListView) findViewById(R.id.modifyListView);
         memberListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, stringMemList);
-        memberListView.setAdapter(memberListAdapter);
-
-        memberListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Member m = memberList.get(position);
-                m.setCount(m.getCount()+1);
-                /*
-                set method
-                https://stackoverflow.com/questions/4352885/how-do-i-update-the-element-at-a-certain-position-in-an-arraylist
-                User: https://stackoverflow.com/users/283240/haskellelephant, and
-                      https://stackoverflow.com/users/332890/maxchinni
-                Date: 2018-10-12
-                */
-                stringMemList.set(position,m.getName()
-                        +"\n\n"
-                        +m.getCount());
-                memberListAdapter.notifyDataSetChanged();
-                return false;
-            }
-        });
-
+        modifyListView.setAdapter(memberListAdapter);
     }
 
-    public void addMember(View view){
-        Toast.makeText(this,"Add New Member",Toast.LENGTH_SHORT).show();
-        EditText editText = (EditText) findViewById(R.id.enterNewMember);
-        String newMem = editText.getText().toString();
-        Member member = new Member(newMem);
-        memberList.add(member);
-        Toast.makeText(this,"Member: "+member.getName(),Toast.LENGTH_SHORT).show();
-        stringMemList.add(member.getName()
-                +"\n\n"
-                +member.getCount());
+    public void backToMain (View view){
+        Toast.makeText(this,"Back to Main", Toast.LENGTH_SHORT).show();
+        Intent backToMainIntent = new Intent(ModifyList.this, MainActivity.class);
+        startActivity(backToMainIntent);
+    }
+
+    public void clearList(View view){
+        Toast.makeText(this,"Clear List",Toast.LENGTH_SHORT).show();
+        memberList.clear();
+        stringMemList.clear();
         memberListAdapter.notifyDataSetChanged();
         saveToFile();
     }
 
-    public void additionalOptions(View view){
-        Toast.makeText(this,"Additional Options",Toast.LENGTH_SHORT).show();
-        Intent additionalOptionsIntent = new Intent(MainActivity.this, AdditionalOptions.class);
-        startActivity(additionalOptionsIntent);
+    public void resetCount(View view){
+        Toast.makeText(this,"Reset Count",Toast.LENGTH_SHORT).show();
+        for (int i = 0; i<memberList.size(); i++){
+            Member m = memberList.get(i);
+            m.setCount(0);
+            stringMemList.set(i,m.getName()
+                    +"\n\n"
+                    +m.getCount());
+            memberListAdapter.notifyDataSetChanged();
+        }
+        saveToFile();
     }
-
-
-    // Using Gson and file input/output came from lonelyTwitter, Joshua Campbell (2015-09-14), Abdul Ali Bangash, 2018-10-02
-    // The below functions and their use are derived from the above application.
 
     private void loadFromFile(){
         try{
@@ -136,3 +116,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+
