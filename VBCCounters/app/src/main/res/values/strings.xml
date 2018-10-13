@@ -2,4 +2,10 @@
     <string name="app_name">VBCCounters</string>
     <string name="addNewMemberButton">Add New</string>
     <string name="headCountButton">Head Count</string>
+    <string name="enterNewMemberText">Enter Name</string>
+    <string name="additonalOptions">Additional Options</string>
+    <string name="buttonBackToMain">Back To Main</string>
+    <string name="buttonClearList">Clear List</string>
+    <string name="buttonDeleteEntry">Delete Entry</string>
+    <string name="buttonResetCount">Reset Count</string>
 </resources>

@@ -1,10 +1,13 @@
 package com.example.vbccounters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -24,11 +27,12 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String FILENAME = "attendanceFile.sav";
+    private static final String FILENAME = "attendFile.sav";
 
     ListView memberListView;
     ArrayList<Member> memberList;
-    ArrayAdapter<Member> memberListAdapter;
+    ArrayList<String> stringMemList;
+    ArrayAdapter<String> memberListAdapter;
 
 
     @Override
@@ -42,22 +46,58 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         loadFromFile();
 
+        stringMemList = new ArrayList<String>();
+
+        for (Member mem : memberList){
+            stringMemList.add(mem.getName()
+                    +"                                                 "
+                    +mem.getCount());
+        }
+
         memberListView = (ListView) findViewById(R.id.membersListView);
-        memberListAdapter = new ArrayAdapter<Member>(this, android.R.layout.simple_list_item_1, memberList);
+        memberListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, stringMemList);
         memberListView.setAdapter(memberListAdapter);
+
+        memberListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Member m = memberList.get(position);
+                m.setCount(m.getCount()+1);
+                /*
+                set method
+                https://stackoverflow.com/questions/4352885/how-do-i-update-the-element-at-a-certain-position-in-an-arraylist
+                User: https://stackoverflow.com/users/283240/haskellelephant, and
+                      https://stackoverflow.com/users/332890/maxchinni
+                Date: 2018-10-12
+                */
+                stringMemList.set(position,m.getName()
+                        +"                                                 "
+                        +m.getCount());
+                memberListView.setAdapter(memberListAdapter);
+                return false;
+            }
+        });
 
     }
 
     public void addMember(View view){
         Toast.makeText(this,"Add New Member",Toast.LENGTH_SHORT).show();
-        String mem = "Test";
-        Member newMem = new Member(mem);
-        memberList.add(newMem);
+        EditText editText = (EditText) findViewById(R.id.enterNewMember);
+        String newMem = editText.getText().toString();
+        Member member = new Member(newMem);
+        memberList.add(member);
+        Toast.makeText(this,"Member: "+member.getName(),Toast.LENGTH_SHORT).show();
+        stringMemList.add(member.getName()
+                +"                                                 "
+                +member.getCount());
         memberListAdapter.notifyDataSetChanged();
+        saveToFile();
     }
 
-    public void headCount(View view){
-        Toast.makeText(this,"Head Count",Toast.LENGTH_SHORT).show();
+    public void additionalOptions(View view){
+        Toast.makeText(this,"Additional Options",Toast.LENGTH_SHORT).show();
+        Intent additionalOptionsIntent = new Intent(MainActivity.this, AdditionalOptions.class);
+        startActivity(additionalOptionsIntent);
     }
 
 
