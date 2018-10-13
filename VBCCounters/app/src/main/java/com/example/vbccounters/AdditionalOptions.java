@@ -22,6 +22,8 @@ public class AdditionalOptions extends AppCompatActivity {
 
     public void headCount(View view){
         Toast.makeText(this, "Head Count", Toast.LENGTH_SHORT).show();
+        Intent headCountIntent = new Intent(AdditionalOptions.this,HeadCount.class);
+        startActivity(headCountIntent);
     }
 
     public void backToMain(View view){

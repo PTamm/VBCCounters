@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                         +"\n\n"
                         +m.getCount());
                 memberListAdapter.notifyDataSetChanged();
+                saveToFile();
                 return false;
             }
         });

@@ -1,7 +1,9 @@
 package com.example.vbccounters;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -55,6 +57,56 @@ public class ModifyList extends AppCompatActivity {
         modifyListView = (ListView) findViewById(R.id.modifyListView);
         memberListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, stringMemList);
         modifyListView.setAdapter(memberListAdapter);
+
+        modifyListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
+
+                final int pos = position;
+                AlertDialog.Builder modifyAlert = new AlertDialog.Builder(ModifyList.this);
+
+                modifyAlert.setTitle("Modifying "+memberList.get(pos));
+                modifyAlert.setCancelable(true);
+
+                final CharSequence[] options = {
+                                            "Reset This Count",
+                                            "Decrement Count",
+                                            "Remove This Entry",
+                                            "Cancel"};
+
+                modifyAlert.setItems(options, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if (which == 0){ //Reset this count
+                            Member m = memberList.get(pos);
+                            m.setCount(0);
+                            stringMemList.set(pos, m.getName()
+                                            +"\n\n"
+                                            +m.getCount());
+                            memberListAdapter.notifyDataSetChanged();
+                            saveToFile();
+                        } else if (which == 1){ //Decrement count
+                            Member m = memberList.get(pos);
+                            m.setCount(m.getCount()-1);
+                            stringMemList.set(pos, m.getName()
+                                            +"\n\n"
+                                            +m.getCount());
+                            memberListAdapter.notifyDataSetChanged();
+                            saveToFile();
+                        } else if (which == 2){ //Remove this entry
+                            memberList.remove(pos);
+                            stringMemList.remove(pos);
+                            memberListAdapter.notifyDataSetChanged();
+                            saveToFile();
+                        } else { //Last item clicked
+                            Toast.makeText(ModifyList.this,"Cancel",Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+                modifyAlert.show();
+                return false;
+            }
+        });
     }
 
     public void backToMain (View view){
