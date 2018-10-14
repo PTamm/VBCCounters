@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".HeadCount">
 
+    <!--
+        text size for TextView:
+        https://code.tutsplus.com/tutorials/android-user-interface-design-basic-font-sizes<DASH DASH>mobile-11194
+        Date: 2018-10-13
+
+        NOTE: due to compatibility issues with XML comments, the two dashes in the above url
+        had to be replaced by <DASH DASH>. To access the url, replace <DASH DASH> with two
+        consecutive dashes. See README on GitHub for exact url.
+    -->
+
     <TextView
         android:id="@+id/totalCountView"
         android:layout_width="0dp"
@@ -16,8 +26,57 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/totalCountTextView"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/headCountView"
+        android:layout_width="0dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/headCount"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalCountView" />
+
+    <Button
+        android:id="@+id/buttonIncrement"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:onClick="incrementCount"
+        android:text="@string/buttonIncrement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headCountView" />
+
+    <Button
+        android:id="@+id/buttonBackToMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:onClick="backToMain"
+        android:text="@string/buttonBackToMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIncrement" />
 
 </android.support.constraint.ConstraintLayout>

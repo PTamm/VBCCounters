@@ -1,8 +1,11 @@
 package com.example.vbccounters;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -19,8 +22,11 @@ public class HeadCount extends AppCompatActivity {
     private static final String FILENAME = "attendFile.sav";
 
     int total;
+    int headCount = 0;
 
     ArrayList<Member> memberList;
+
+    TextView headCountView;
 
 
     @Override
@@ -41,8 +47,20 @@ public class HeadCount extends AppCompatActivity {
         TextView totalCount = (TextView) findViewById(R.id.totalCountView);
         totalCount.setText("Total: "+total);
 
+        headCountView = (TextView) findViewById(R.id.headCountView);
+        headCountView.setText(""+headCount);
 
+    }
 
+    public void incrementCount(View view){
+        headCount = headCount + 1;
+        headCountView.setText(""+headCount);
+    }
+
+    public void backToMain(View view){
+        Toast.makeText(this, "Back to Main", Toast.LENGTH_SHORT).show();
+        Intent backToMainIntent = new Intent(HeadCount.this, MainActivity.class);
+        startActivity(backToMainIntent);
     }
 
     private void loadFromFile(){

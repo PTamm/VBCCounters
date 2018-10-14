@@ -10,4 +10,6 @@
     <string name="buttonResetCount">Reset Count</string>
     <string name="buttonModifyList">Modify List</string>
     <string name="totalCountTextView">Total Count</string>
+    <string name="buttonIncrement">Increment</string>
+    <string name="headCount">0</string>
 </resources>
