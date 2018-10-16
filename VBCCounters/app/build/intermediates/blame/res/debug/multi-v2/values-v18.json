@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "/afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/55c0102327e3cbe8d61d21991451e776/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

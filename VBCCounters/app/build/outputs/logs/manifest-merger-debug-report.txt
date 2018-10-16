@@ -1,0 +1,166 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/55c0102327e3cbe8d61d21991451e776/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/85b3f8e08611098082c3b2683d1de760/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/b7ad5d335c43ffbc254b0b12203d5049/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c0fece0ce96a6ddb459c1e459fae8b7d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8aa9207a2943e3f21db3c034eefee91d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/3d1c62d34eb5312e6176d72189985df0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/f9a2f16e540be5a644da62d616ae826a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/b27057824a17ed86fef3eec496374941/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/20025ea33bf91033953e740749afd679/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/4ae82fa84048d44a187e04c8d2b369f6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e58b8ce6ff69ab82c99f5100170addad/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/9dff490e40a37e397b32c03dc796123e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/cc0551ca14285c9f71c3c00a88f8de91/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a14b8c7b2648a25da0fda9cacad68a75/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/20a8830641a4ec7529f2ad0e161f4839/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7c1056ee2a062aa7ea4d808b7d6c3d70/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/32ebe7f1be0c8ca7c7779c96f7e30ada/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/bdb15c92429145a13db7aed89716b6b7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/276bda01f26a2241d888052edde8f03c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ac488f6a46b731a249c3f5926d8f9c63/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/5b4ce144f87c71a05bad26626b498143/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/fcabd849c6768724c2dd317417c90862/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/9f160c71a482fc605f11e721f9d2b485/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/ea98cf9cfcd08a86a28f955487826a5b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f2be436d017d6323f60158770ee410c4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/df3b1d9f0acd4934ccf53a022f929355/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/5a90475d3084416c4bbdc215c949b3cf/AndroidManifest.xml:17:1-22:12
+INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+		INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:5:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/85b3f8e08611098082c3b2683d1de760/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/85b3f8e08611098082c3b2683d1de760/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7c1056ee2a062aa7ea4d808b7d6c3d70/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7c1056ee2a062aa7ea4d808b7d6c3d70/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/32ebe7f1be0c8ca7c7779c96f7e30ada/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/32ebe7f1be0c8ca7c7779c96f7e30ada/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7c1056ee2a062aa7ea4d808b7d6c3d70/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.vbccounters.MainActivity
+ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.example.vbccounters.AdditionalOptions
+ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:19:9-55
+	android:name
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:19:19-52
+activity#com.example.vbccounters.ModifyList
+ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:20:9-48
+	android:name
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:20:19-45
+activity#com.example.vbccounters.HeadCount
+ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:21:9-56
+	android:name
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml:21:19-44
+uses-sdk
+INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/55c0102327e3cbe8d61d21991451e776/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/55c0102327e3cbe8d61d21991451e776/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/85b3f8e08611098082c3b2683d1de760/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/85b3f8e08611098082c3b2683d1de760/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/b7ad5d335c43ffbc254b0b12203d5049/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/b7ad5d335c43ffbc254b0b12203d5049/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c0fece0ce96a6ddb459c1e459fae8b7d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c0fece0ce96a6ddb459c1e459fae8b7d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8aa9207a2943e3f21db3c034eefee91d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8aa9207a2943e3f21db3c034eefee91d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/3d1c62d34eb5312e6176d72189985df0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/3d1c62d34eb5312e6176d72189985df0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/f9a2f16e540be5a644da62d616ae826a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/f9a2f16e540be5a644da62d616ae826a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/b27057824a17ed86fef3eec496374941/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/b27057824a17ed86fef3eec496374941/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/20025ea33bf91033953e740749afd679/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/20025ea33bf91033953e740749afd679/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/4ae82fa84048d44a187e04c8d2b369f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/4ae82fa84048d44a187e04c8d2b369f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e58b8ce6ff69ab82c99f5100170addad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e58b8ce6ff69ab82c99f5100170addad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/9dff490e40a37e397b32c03dc796123e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/9dff490e40a37e397b32c03dc796123e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/cc0551ca14285c9f71c3c00a88f8de91/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/cc0551ca14285c9f71c3c00a88f8de91/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a14b8c7b2648a25da0fda9cacad68a75/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a14b8c7b2648a25da0fda9cacad68a75/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/20a8830641a4ec7529f2ad0e161f4839/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/20a8830641a4ec7529f2ad0e161f4839/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7c1056ee2a062aa7ea4d808b7d6c3d70/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7c1056ee2a062aa7ea4d808b7d6c3d70/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/32ebe7f1be0c8ca7c7779c96f7e30ada/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/32ebe7f1be0c8ca7c7779c96f7e30ada/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/bdb15c92429145a13db7aed89716b6b7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/bdb15c92429145a13db7aed89716b6b7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/276bda01f26a2241d888052edde8f03c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/276bda01f26a2241d888052edde8f03c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ac488f6a46b731a249c3f5926d8f9c63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ac488f6a46b731a249c3f5926d8f9c63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/5b4ce144f87c71a05bad26626b498143/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/5b4ce144f87c71a05bad26626b498143/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/fcabd849c6768724c2dd317417c90862/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/fcabd849c6768724c2dd317417c90862/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/9f160c71a482fc605f11e721f9d2b485/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/9f160c71a482fc605f11e721f9d2b485/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/ea98cf9cfcd08a86a28f955487826a5b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/ea98cf9cfcd08a86a28f955487826a5b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f2be436d017d6323f60158770ee410c4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f2be436d017d6323f60158770ee410c4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/df3b1d9f0acd4934ccf53a022f929355/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/df3b1d9f0acd4934ccf53a022f929355/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/5a90475d3084416c4bbdc215c949b3cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/5a90475d3084416c4bbdc215c949b3cf/AndroidManifest.xml:20:5-44
+INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+		INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+		ADDED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml
+		INJECTED from /afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/src/main/AndroidManifest.xml

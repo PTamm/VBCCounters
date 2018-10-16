@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "/afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/55c0102327e3cbe8d61d21991451e776/res/values-watch-v21/values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
+                    }
+                }
+            ]
+        }
+    ]
+}
