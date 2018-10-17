@@ -58,26 +58,56 @@ public class MainActivity extends AppCompatActivity {
         memberListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, stringMemList);
         memberListView.setAdapter(memberListAdapter);
 
-        memberListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+
+        /*
+           Wanted to have listener on short click, and encountered difficulty. Found this solution at
+           https://stackoverflow.com/questions/10295226/how-to-create-listview-onitemclicklistener/10295659#10295659
+           User: https://stackoverflow.com/users/1061728/gama, and
+                 https://stackoverflow.com/users/6290452/alexta
+           Date: 2018-10-17
+
+        */
+        memberListView.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener(){
             @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Member m = memberList.get(position);
-                m.setCount(m.getCount()+1);
-                /*
-                set method
-                https://stackoverflow.com/questions/4352885/how-do-i-update-the-element-at-a-certain-position-in-an-arraylist
-                User: https://stackoverflow.com/users/283240/haskellelephant, and
-                      https://stackoverflow.com/users/332890/maxchinni
-                Date: 2018-10-12
-                */
-                stringMemList.set(position,m.getName()
-                        +"\n\n"
-                        +m.getCount());
+                m.setCount(m.getCount() + 1);
+                    /*
+                     set method
+                    https://stackoverflow.com/questions/4352885/how-do-i-update-the-element-at-a-certain-position-in-an-arraylist
+                    User: https://stackoverflow.com/users/283240/haskellelephant, and
+                          https://stackoverflow.com/users/332890/maxchinni
+                    Date: 2018-10-12
+                    */
+                stringMemList.set(position, m.getName()
+                        + "\n\n"
+                        + m.getCount());
                 memberListAdapter.notifyDataSetChanged();
                 saveToFile();
-                return false;
             }
         });
+
+        //
+//        memberListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+//            @Override
+//            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
+//                Member m = memberList.get(position);
+//                m.setCount(m.getCount()+1);
+//                /*
+//                set method
+//                https://stackoverflow.com/questions/4352885/how-do-i-update-the-element-at-a-certain-position-in-an-arraylist
+//                User: https://stackoverflow.com/users/283240/haskellelephant, and
+//                      https://stackoverflow.com/users/332890/maxchinni
+//                Date: 2018-10-12
+//                */
+//                stringMemList.set(position,m.getName()
+//                        +"\n\n"
+//                        +m.getCount());
+//                memberListAdapter.notifyDataSetChanged();
+//                saveToFile();
+//                return false;
+//            }
+//        });
 
     }
 
