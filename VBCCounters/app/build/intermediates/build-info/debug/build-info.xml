@@ -2,13 +2,13 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="23"
-    build-mode="HOT_WARM"
+    build-mode="FULL"
     density="xhdpi"
     format="10"
     plugin-version="3.1.4"
-    timestamp="1539879889718"
-    token="-5061143101805814491"
-    verifier="COMPATIBLE" >
+    timestamp="1539899276060"
+    token="8677056414070315040"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -18,79 +18,88 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="1469" />
     <task
         name="verifier"
-        duration="0" />
+        duration="2000" />
 
     <artifact
-        location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1539878656706"
+        timestamp="1539899276060"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1539879108466"
-        verifier="CLASS_ADDED" >
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1539879569080"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1539879889718"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>
