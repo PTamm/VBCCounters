@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml",
+            "outputFile": "C:\\Users\\Patrick\\Desktop\\VBC_Counters\\VBCCounters\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
             "map": [
                 {
-                    "source": "/afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/55c0102327e3cbe8d61d21991451e776/res/values-sq/values-sq.xml",
+                    "source": "C:\\Users\\Patrick\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e835ba066bb92c4b9d95e40f69a7da3d\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7c1056ee2a062aa7ea4d808b7d6c3d70/res/values-sq/values-sq.xml",
+                    "source": "C:\\Users\\Patrick\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\45ddc81e1c76f867b030a601b5cb39f0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
+            "outputFile": "C:\\Users\\Patrick\\Desktop\\VBC_Counters\\VBCCounters\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "/afs/ualberta.ca/home/t/a/tamm/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/55c0102327e3cbe8d61d21991451e776/res/values-large-v4/values-large-v4.xml",
+                    "source": "C:\\Users\\Patrick\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e835ba066bb92c4b9d95e40f69a7da3d\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
