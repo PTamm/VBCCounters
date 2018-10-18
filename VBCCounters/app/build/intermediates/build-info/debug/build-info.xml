@@ -6,7 +6,7 @@
     density="xhdpi"
     format="10"
     plugin-version="3.1.4"
-    timestamp="1539715135857"
+    timestamp="1539879889718"
     token="-5061143101805814491"
     verifier="COMPATIBLE" >
 
@@ -29,8 +29,11 @@
 
     <build
         build-mode="FULL"
-        timestamp="1539715084336"
+        timestamp="1539878656706"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
         <artifact
             location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
@@ -62,15 +65,28 @@
             location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
             location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
     </build>
     <build
+        build-mode="COLD"
+        timestamp="1539879108466"
+        verifier="CLASS_ADDED" >
+        <artifact
+            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1539879569080"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
         build-mode="HOT_WARM"
-        timestamp="1539715135857"
+        timestamp="1539879889718"
         verifier="COMPATIBLE" >
         <artifact
             location="/afs/ualberta.ca/home/t/a/tamm/VBC_Counters/VBCCounters/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"

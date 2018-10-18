@@ -21,7 +21,7 @@ public class HeadCount extends AppCompatActivity {
 
     private static final String FILENAME = "attendFile.sav";
 
-    int total;
+    int total = 0;
     int headCount = 0;
 
     ArrayList<Member> memberList;
@@ -40,6 +40,8 @@ public class HeadCount extends AppCompatActivity {
         super.onStart();
         loadFromFile();
 
+        total = 0;
+
         for (Member mem : memberList){
             total = total + mem.getCount();
         }
@@ -50,6 +52,20 @@ public class HeadCount extends AppCompatActivity {
         headCountView = (TextView) findViewById(R.id.headCountView);
         headCountView.setText(""+headCount);
 
+    }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+
+        total = 0;
+
+        for (Member mem : memberList){
+            total = total + mem.getCount();
+        }
+
+        TextView totalCount = (TextView) findViewById(R.id.totalCountView);
+        totalCount.setText("Total: "+total);
     }
 
     public void incrementCount(View view){

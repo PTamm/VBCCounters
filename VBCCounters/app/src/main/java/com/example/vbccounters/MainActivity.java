@@ -87,27 +87,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //
-//        memberListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-//            @Override
-//            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
-//                Member m = memberList.get(position);
-//                m.setCount(m.getCount()+1);
-//                /*
-//                set method
-//                https://stackoverflow.com/questions/4352885/how-do-i-update-the-element-at-a-certain-position-in-an-arraylist
-//                User: https://stackoverflow.com/users/283240/haskellelephant, and
-//                      https://stackoverflow.com/users/332890/maxchinni
-//                Date: 2018-10-12
-//                */
-//                stringMemList.set(position,m.getName()
-//                        +"\n\n"
-//                        +m.getCount());
-//                memberListAdapter.notifyDataSetChanged();
-//                saveToFile();
-//                return false;
-//            }
-//        });
+
+        memberListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Member m = memberList.get(position);
+                m.setCount(m.getCount()-1);
+                /*
+                set method
+                https://stackoverflow.com/questions/4352885/how-do-i-update-the-element-at-a-certain-position-in-an-arraylist
+                User: https://stackoverflow.com/users/283240/haskellelephant, and
+                      https://stackoverflow.com/users/332890/maxchinni
+                Date: 2018-10-12
+                */
+                stringMemList.set(position,m.getName()
+                        +"\n\n"
+                        +m.getCount());
+                memberListAdapter.notifyDataSetChanged();
+                saveToFile();
+                return false;
+            }
+        });
 
     }
 
