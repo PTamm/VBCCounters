@@ -2,12 +2,12 @@ package com.example.vbccounters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String FILENAME = "attendFile.sav";
 
     ListView memberListView;
-    ArrayList<Member> memberList;
+    ArrayList<Attendee> attendeeList;
     ArrayList<String> stringMemList;
     ArrayAdapter<String> memberListAdapter;
 
@@ -39,6 +39,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FloatingActionButton newMemberFAB = findViewById(R.id.addNewMemberFAB);
+        newMemberFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this,"New Attendee",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, NewAttendeeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -48,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         stringMemList = new ArrayList<String>();
 
-        for (Member mem : memberList){
+        for (Attendee mem : attendeeList){
             stringMemList.add(mem.getName()
                     +"\n\n"
                     +mem.getCount());
@@ -70,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         memberListView.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Member m = memberList.get(position);
+                Attendee m = attendeeList.get(position);
                 m.setCount(m.getCount() + 1);
                     /*
                      set method
@@ -91,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         memberListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Member m = memberList.get(position);
+                Attendee m = attendeeList.get(position);
                 m.setCount(m.getCount()-1);
                 /*
                 set method
@@ -111,27 +121,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void addMember(View view){
-        Toast.makeText(this,"Add New Member",Toast.LENGTH_SHORT).show();
-        EditText editText = (EditText) findViewById(R.id.enterNewMember);
-        String newMem = editText.getText().toString();
-        Member member = new Member(newMem);
-        memberList.add(member);
-        Toast.makeText(this,"Member: "+member.getName(),Toast.LENGTH_SHORT).show();
-        stringMemList.add(member.getName()
-                +"\n\n"
-                +member.getCount());
-        memberListAdapter.notifyDataSetChanged();
-        saveToFile();
-    }
-
-    public void additionalOptions(View view){
-        Toast.makeText(this,"Additional Options",Toast.LENGTH_SHORT).show();
-        Intent additionalOptionsIntent = new Intent(MainActivity.this, AdditionalOptions.class);
-        startActivity(additionalOptionsIntent);
-    }
-
-
     // Using Gson and file input/output came from lonelyTwitter, Joshua Campbell (2015-09-14), Abdul Ali Bangash, 2018-10-02
     // The below functions and their use are derived from the above application.
 
@@ -141,12 +130,12 @@ public class MainActivity extends AppCompatActivity {
             BufferedReader input = new BufferedReader(new InputStreamReader(fis));
 
             Gson gson = new Gson();
-            Type listType = new TypeToken<ArrayList<Member>>(){}.getType();
-            memberList = gson.fromJson(input,listType);
+            Type listType = new TypeToken<ArrayList<Attendee>>(){}.getType();
+            attendeeList = gson.fromJson(input,listType);
 
 
         } catch (FileNotFoundException fnf){
-            memberList = new ArrayList<Member>();
+            attendeeList = new ArrayList<Attendee>();
         }
     }
 
@@ -156,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(fos));
 
             Gson gson = new Gson();
-            gson.toJson(memberList,out);
+            gson.toJson(attendeeList,out);
             out.flush();
             fos.close();
         } catch (FileNotFoundException fnf){

@@ -24,7 +24,7 @@ public class HeadCount extends AppCompatActivity {
     int total = 0;
     int headCount = 0;
 
-    ArrayList<Member> memberList;
+    ArrayList<Attendee> attendeeList;
 
     TextView headCountView;
 
@@ -42,7 +42,7 @@ public class HeadCount extends AppCompatActivity {
 
         total = 0;
 
-        for (Member mem : memberList){
+        for (Attendee mem : attendeeList){
             total = total + mem.getCount();
         }
 
@@ -60,7 +60,7 @@ public class HeadCount extends AppCompatActivity {
 
         total = 0;
 
-        for (Member mem : memberList){
+        for (Attendee mem : attendeeList){
             total = total + mem.getCount();
         }
 
@@ -85,12 +85,12 @@ public class HeadCount extends AppCompatActivity {
             BufferedReader input = new BufferedReader(new InputStreamReader(fis));
 
             Gson gson = new Gson();
-            Type listType = new TypeToken<ArrayList<Member>>(){}.getType();
-            memberList = gson.fromJson(input,listType);
+            Type listType = new TypeToken<ArrayList<Attendee>>(){}.getType();
+            attendeeList = gson.fromJson(input,listType);
 
 
         } catch (FileNotFoundException fnf){
-            memberList = new ArrayList<Member>();
+            attendeeList = new ArrayList<Attendee>();
         }
     }
 }

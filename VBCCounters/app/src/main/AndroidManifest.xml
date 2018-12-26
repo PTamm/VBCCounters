@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".AdditionalOptions" />
         <activity android:name=".ModifyList" />
-        <activity android:name=".HeadCount"></activity>
+        <activity android:name=".HeadCount" />
+        <activity android:name=".NewAttendeeActivity"></activity>
     </application>
 
 </manifest>

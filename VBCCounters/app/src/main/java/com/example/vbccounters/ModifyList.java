@@ -31,7 +31,7 @@ public class ModifyList extends AppCompatActivity {
     private static final String FILENAME = "attendFile.sav";
 
     ListView modifyListView;
-    ArrayList<Member> memberList;
+    ArrayList<Attendee> attendeeList;
     ArrayList<String> stringMemList;
     ArrayAdapter<String> memberListAdapter;
 
@@ -48,7 +48,7 @@ public class ModifyList extends AppCompatActivity {
 
         stringMemList = new ArrayList<String>();
 
-        for (Member mem : memberList){
+        for (Attendee mem : attendeeList){
             stringMemList.add(mem.getName()
                     +"\n\n"
                     +mem.getCount());
@@ -65,7 +65,7 @@ public class ModifyList extends AppCompatActivity {
                 final int pos = position;
                 AlertDialog.Builder modifyAlert = new AlertDialog.Builder(ModifyList.this);
 
-                modifyAlert.setTitle("Modifying "+memberList.get(pos));
+                modifyAlert.setTitle("Modifying "+ attendeeList.get(pos));
                 modifyAlert.setCancelable(true);
 
                 final CharSequence[] options = {
@@ -78,7 +78,7 @@ public class ModifyList extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         if (which == 0){ //Reset this count
-                            Member m = memberList.get(pos);
+                            Attendee m = attendeeList.get(pos);
                             m.setCount(0);
                             stringMemList.set(pos, m.getName()
                                             +"\n\n"
@@ -86,7 +86,7 @@ public class ModifyList extends AppCompatActivity {
                             memberListAdapter.notifyDataSetChanged();
                             saveToFile();
                         } else if (which == 1){ //Decrement count
-                            Member m = memberList.get(pos);
+                            Attendee m = attendeeList.get(pos);
                             m.setCount(m.getCount()-1);
                             stringMemList.set(pos, m.getName()
                                             +"\n\n"
@@ -94,7 +94,7 @@ public class ModifyList extends AppCompatActivity {
                             memberListAdapter.notifyDataSetChanged();
                             saveToFile();
                         } else if (which == 2){ //Remove this entry
-                            memberList.remove(pos);
+                            attendeeList.remove(pos);
                             stringMemList.remove(pos);
                             memberListAdapter.notifyDataSetChanged();
                             saveToFile();
@@ -117,7 +117,7 @@ public class ModifyList extends AppCompatActivity {
 
     public void clearList(View view){
         Toast.makeText(this,"Clear List",Toast.LENGTH_SHORT).show();
-        memberList.clear();
+        attendeeList.clear();
         stringMemList.clear();
         memberListAdapter.notifyDataSetChanged();
         saveToFile();
@@ -125,8 +125,8 @@ public class ModifyList extends AppCompatActivity {
 
     public void resetCount(View view){
         Toast.makeText(this,"Reset Count",Toast.LENGTH_SHORT).show();
-        for (int i = 0; i<memberList.size(); i++){
-            Member m = memberList.get(i);
+        for (int i = 0; i< attendeeList.size(); i++){
+            Attendee m = attendeeList.get(i);
             m.setCount(0);
             stringMemList.set(i,m.getName()
                     +"\n\n"
@@ -142,12 +142,12 @@ public class ModifyList extends AppCompatActivity {
             BufferedReader input = new BufferedReader(new InputStreamReader(fis));
 
             Gson gson = new Gson();
-            Type listType = new TypeToken<ArrayList<Member>>(){}.getType();
-            memberList = gson.fromJson(input,listType);
+            Type listType = new TypeToken<ArrayList<Attendee>>(){}.getType();
+            attendeeList = gson.fromJson(input,listType);
 
 
         } catch (FileNotFoundException fnf){
-            memberList = new ArrayList<Member>();
+            attendeeList = new ArrayList<Attendee>();
         }
     }
 
@@ -157,7 +157,7 @@ public class ModifyList extends AppCompatActivity {
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(fos));
 
             Gson gson = new Gson();
-            gson.toJson(memberList,out);
+            gson.toJson(attendeeList,out);
             out.flush();
             fos.close();
         } catch (FileNotFoundException fnf){
