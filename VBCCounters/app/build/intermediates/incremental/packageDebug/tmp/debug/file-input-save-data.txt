@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Oct 18 15:48:19 MDT 2018
+#Wed Dec 26 21:52:36 MST 2018
 1.base=C\:\\Users\\Patrick\\Desktop\\VBC_Counters\\VBCCounters\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
 2.path=classes.dex
 0.baseType=DIRECTORY

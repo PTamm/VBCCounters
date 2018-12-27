@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     ListView memberListView;
     ArrayList<Attendee> attendeeList;
     ArrayList<String> stringMemList;
-    ArrayAdapter<String> memberListAdapter;
+    ArrayAdapter<String> attendeeListAdapter;
 
 
     @Override
@@ -65,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         memberListView = (ListView) findViewById(R.id.membersListView);
-        memberListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, stringMemList);
-        memberListView.setAdapter(memberListAdapter);
+        attendeeListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, stringMemList);
+        memberListView.setAdapter(attendeeListAdapter);
 
 
         /*
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 stringMemList.set(position, m.getName()
                         + "\n\n"
                         + m.getCount());
-                memberListAdapter.notifyDataSetChanged();
+                attendeeListAdapter.notifyDataSetChanged();
                 saveToFile();
             }
         });
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                 stringMemList.set(position,m.getName()
                         +"\n\n"
                         +m.getCount());
-                memberListAdapter.notifyDataSetChanged();
+                attendeeListAdapter.notifyDataSetChanged();
                 saveToFile();
                 return false;
             }

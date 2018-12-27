@@ -102,10 +102,10 @@ activity#com.example.vbccounters.HeadCount
 ADDED from C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\src\main\AndroidManifest.xml:21:9-47
 	android:name
 		ADDED from C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\src\main\AndroidManifest.xml:21:19-44
-activity#com.example.vbccounters.NewMemberActivity
-ADDED from C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\src\main\AndroidManifest.xml:22:9-64
+activity#com.example.vbccounters.NewAttendeeActivity
+ADDED from C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\src\main\AndroidManifest.xml:22:9-66
 	android:name
-		ADDED from C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\src\main\AndroidManifest.xml:22:19-52
+		ADDED from C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\src\main\AndroidManifest.xml:22:19-54
 uses-sdk
 INJECTED from C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Patrick\Desktop\VBC_Counters\VBCCounters\app\src\main\AndroidManifest.xml

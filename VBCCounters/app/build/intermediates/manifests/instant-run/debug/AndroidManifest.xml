@@ -28,6 +28,7 @@
         <activity android:name="com.example.vbccounters.AdditionalOptions" />
         <activity android:name="com.example.vbccounters.ModifyList" />
         <activity android:name="com.example.vbccounters.HeadCount" />
+        <activity android:name="com.example.vbccounters.NewAttendeeActivity" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
